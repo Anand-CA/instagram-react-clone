@@ -1,0 +1,91 @@
+.app {
+   background-color: #fafafa;
+}
+.app__headerContainer {
+   display: flex;
+   padding: 10px;
+   align-items: center;
+   justify-content: space-between;
+   flex: 1;
+}
+.header_logo {
+   height: 40px;
+   object-fit: contain;
+}
+.insta {
+   padding: 20px;
+}
+.app__modal {
+   width: 30vh;
+}
+.app__form {
+   display: flex;
+   flex-direction: column;
+}
+.app__form > input {
+   border: none;
+   margin-bottom: 20px;
+   padding: 10px;
+   background-color: rgb(230, 230, 230);
+   border-radius: 5px;
+   outline-width: 0;
+}
+.app__insta {
+   height: 120px;
+   object-fit: contain;
+   margin-bottom: -20px;
+}
+.signup__button {
+   padding-bottom: 20px;
+}
+.app__header {
+   position: sticky;
+   top: 0;
+   background-color: white;
+   z-index: 1;
+   border-bottom: 1px solid lightgray;
+   margin-bottom: 25px;
+   display: flex;
+   justify-content: center;
+}
+.app__headerRight > .MuiButton-root {
+   font-weight: bolder;
+   font-family: "Poppins", sans-serif;
+}
+.noUser_comment {
+   padding-left: 20px;
+   padding-bottom: 40px;
+}
+/* html {
+   scroll-snap-type: y mandatory;
+} */
+.app__videos::-webkit-scrollbar {
+   display: none;
+}
+.app__videos {
+   -ms-overflow-style: none;
+   scrollbar-width: none;
+}
+.app__videos {
+   height: 66vh;
+   width: 36vh;
+   background-color: #fff;
+   border-radius: 12px;
+   position: relative;
+   overflow-y: scroll;
+   scroll-snap-type: y mandatory;
+}
+@media screen and (max-width: 850px) {
+   .app__embed {
+      display: none;
+   }
+   .app__container {
+      flex-direction: column;
+   }
+   .app__videos {
+      margin-left: auto;
+      margin-right: auto;
+      height: 70vh;
+      width: 40vh;
+   }
+}
