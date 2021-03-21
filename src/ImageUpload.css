@@ -1,0 +1,22 @@
+.image_upload{
+    display: flex;
+    padding-bottom: 20px;
+    flex-direction: column;
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.imageUpload_progress{
+    height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.imageUpload_file{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 850px) {
+    .image_upload{
+        width: 300px;
+    }
+}
